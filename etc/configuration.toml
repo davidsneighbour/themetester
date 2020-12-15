@@ -1,0 +1,24 @@
+repositories = [
+    # themefisher
+    "git@github.com:gethugothemes/omega-hugo-theme.git",
+    "git@github.com:themefisher/meghna-hugo.git",
+    "git@github.com:themefisher/airspace-hugo.git",
+    "git@github.com:themefisher/parsa-hugo.git",
+    "git@github.com:themefisher/kross-hugo.git",
+    "git@github.com:themefisher/dot-hugo-documentation-theme.git",
+    "git@github.com:themefisher/educenter-hugo.git",
+    "git@github.com:themefisher/academia-hugo.git",
+    "git@github.com:themefisher/northendlab-hugo.git",
+    "git@github.com:themefisher/liva-hugo.git",
+    "git@github.com:themefisher/vex-hugo.git",
+    "git@github.com:themefisher/timer-hugo.git",
+    "git@github.com:themefisher/navigator-hugo.git",
+    "git@github.com:themefisher/hargo-hugo-ecommerce-theme.git",
+    "git@github.com:themefisher/restaurant-hugo.git",
+    "git@github.com:themefisher/Influencer-hugo.git",
+    "git@github.com:themefisher/infinity-hugo.git",
+    "git@github.com:themefisher/bigspring-hugo-startup-theme.git",
+    "git@github.com:themefisher/persian-hugo.git",
+    "git@github.com:themefisher/twenty-twenty-hugo.git",
+    # on gitlab
+]

@@ -1,0 +1,27 @@
+{
+  "name": "@dnb-hugo/themetester",
+  "version": "1.0.0",
+  "description": "A quick and easy theme tester for Hugo.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnb-hugo/themetester.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnb-hugo/themetester/issues"
+  },
+  "homepage": "https://github.com/dnb-hugo/themetester#readme",
+  "devDependencies": {
+    "remark-preset-lint-dnb": "github:davidsneighbour/remark-preset-lint-dnb"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-dnb",
+      [
+        "remark-lint-write-good",
+        false
+      ]
+    ]
+  }
+}
