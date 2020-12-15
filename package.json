@@ -1,6 +1,6 @@
 {
   "name": "@dnb-hugo/themetester",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A quick and easy theme tester for Hugo.",
   "repository": {
     "type": "git",
