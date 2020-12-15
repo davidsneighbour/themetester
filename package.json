@@ -13,7 +13,13 @@
   },
   "homepage": "https://github.com/dnb-hugo/themetester#readme",
   "devDependencies": {
-    "remark-preset-lint-dnb": "github:davidsneighbour/remark-preset-lint-dnb"
+    "remark-preset-lint-dnb": "github:davidsneighbour/remark-preset-lint-dnb",
+    "@dnb-hugo/commitlint-config-dnb": "github:dnb-hugo/commitlint-config-dnb",
+    "commitizen": "4.2.2",
+    "cz-conventional-changelog": "3.3.0",
+    "cz-customizable": "6.3.0",
+    "cz-customizable-ghooks": "2.0.0",
+    "husky": "4.3.6"
   },
   "remarkConfig": {
     "plugins": [
@@ -22,6 +28,36 @@
         "remark-lint-write-good",
         false
       ]
+    ]
+  },
+  "scripts": {
+    "release": "standard-version --release-as patch -a -t \"v\" && ./bin/release-hook-postrelease.sh",
+    "release-next": "standard-version --release-as minor -a -t \"v\" && ./bin/release-hook-postrelease.sh",
+    "release-major": "standard-version --release-as major -a -t \"v\" && ./bin/release-hook-postrelease.sh",
+    "commitlint": "commitlint --from=HEAD~1"
+  },
+  "standard-version": {
+    "skip": {
+      "changelog": true
+    },
+    "scripts": {
+      "prerelease": "./bin/release-hook-prerelease.sh"
+    },
+    "bumpFiles": [
+      {
+        "filename": "package.json",
+        "type": "json"
+      }
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@dnb-hugo/commitlint-config-dnb"
     ]
   }
 }
