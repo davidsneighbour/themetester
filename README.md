@@ -2,9 +2,8 @@
 
 **Requirements:**
 
-- Hugo needs to be installed and configured in the path 
-- @todo make hugo installation part of the script
-
+-   Hugo needs to be installed and configured in the path 
+-   @todo make hugo installation part of the script
 
 **Step 1:** Run `bin/themetester-setup.sh` to load all configured themes
 
