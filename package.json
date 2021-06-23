@@ -15,11 +15,10 @@
   "devDependencies": {
     "remark-preset-lint-dnb": "github:davidsneighbour/remark-preset-lint-dnb",
     "@dnb-hugo/commitlint-config-dnb": "github:dnb-hugo/commitlint-config-dnb",
-    "commitizen": "4.2.2",
+    "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
     "cz-customizable": "6.3.0",
-    "cz-customizable-ghooks": "2.0.0",
-    "husky": "4.3.6"
+    "cz-customizable-ghooks": "2.0.0"
   },
   "remarkConfig": {
     "plugins": [
@@ -49,11 +48,6 @@
         "type": "json"
       }
     ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "commitlint": {
     "extends": [
