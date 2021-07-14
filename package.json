@@ -1,25 +1,26 @@
 {
-  "name": "@dnb-hugo/themetester",
-  "version": "0.0.1",
+  "name": "@dnb-org/themetester",
   "description": "A quick and easy theme tester for Hugo.",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dnb-hugo/themetester.git"
-  },
+  "version": "0.0.1",
   "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dnb-hugo/themetester/issues"
+    "url": "https://github.com/dnb-org/themetester/issues"
   },
-  "homepage": "https://github.com/dnb-hugo/themetester#readme",
+  "commitlint": {
+    "extends": [
+      "@dnb-org/commitlint-config-dnb"
+    ]
+  },
   "devDependencies": {
-    "remark-preset-lint-dnb": "github:davidsneighbour/remark-preset-lint-dnb",
-    "@dnb-hugo/commitlint-config-dnb": "github:dnb-hugo/commitlint-config-dnb",
+    "@dnb-org/commitlint-config": "3.1.0",
+    "@dnb-org/remark-config": "3.1.0",
     "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
     "cz-customizable": "6.3.0",
     "cz-customizable-ghooks": "2.0.0"
   },
+  "homepage": "https://github.com/dnb-org/themetester#readme",
+  "license": "ISC",
   "remarkConfig": {
     "plugins": [
       "remark-preset-lint-dnb",
@@ -29,11 +30,15 @@
       ]
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnb-org/themetester.git"
+  },
   "scripts": {
+    "commitlint": "commitlint --from=HEAD~1",
     "release": "standard-version --release-as patch -a -t \"v\" && ./bin/release-hook-postrelease.sh",
-    "release-next": "standard-version --release-as minor -a -t \"v\" && ./bin/release-hook-postrelease.sh",
     "release-major": "standard-version --release-as major -a -t \"v\" && ./bin/release-hook-postrelease.sh",
-    "commitlint": "commitlint --from=HEAD~1"
+    "release-next": "standard-version --release-as minor -a -t \"v\" && ./bin/release-hook-postrelease.sh"
   },
   "standard-version": {
     "skip": {
@@ -47,11 +52,6 @@
         "filename": "package.json",
         "type": "json"
       }
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@dnb-hugo/commitlint-config-dnb"
     ]
   }
 }
