@@ -12,7 +12,7 @@
     ]
   },
   "devDependencies": {
-    "@dnb-org/commitlint-config": "3.4.1",
+    "@dnb-org/commitlint-config": "3.4.2",
     "@dnb-org/remark-config": "3.4.1",
     "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
