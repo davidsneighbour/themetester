@@ -14,7 +14,7 @@
   "devDependencies": {
     "@dnb-org/commitlint-config": "3.4.1",
     "@dnb-org/remark-config": "3.4.1",
-    "commitizen": "4.2.4",
+    "commitizen": "4.3.0",
     "cz-conventional-changelog": "3.3.0",
     "cz-customizable": "6.3.0",
     "cz-customizable-ghooks": "2.0.0"
